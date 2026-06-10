@@ -7,11 +7,11 @@ import hashlib
 #  DB CONFIG  –  apne MySQL credentials yahan
 # ─────────────────────────────────────────────
 DB_CONFIG = {
-    "host": "localhost",
-    "user": "root",          # ← apna MySQL username
-    "password": "Rudera@123",  # ← apna MySQL password
-    "database": "yatraglobe",
-    "port": 3306,
+    "host"     : st.secrets["mysql"]["host"],
+    "user"     : st.secrets["mysql"]["user"],
+    "password" : st.secrets["mysql"]["password"],
+    "database" : st.secrets["mysql"]["database"],
+    "port"     : int(st.secrets["mysql"]["port"]),
 }
 
 
